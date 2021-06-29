@@ -15,9 +15,11 @@ spec:
       containers:
       - name: my-flask-app
         image: 80081837/mypythonflaskwebapp
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
+        
         ports:
         - containerPort: 5000
+        restartPolicy: Always
 # service type loadbalancer       
 ---
 apiVersion: v1
