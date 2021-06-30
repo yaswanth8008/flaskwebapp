@@ -16,6 +16,8 @@ spec:
       - name: my-flask-app
         image: 80081837/mypythonflaskwebapp
         imagePullPolicy: Always
+      imagePullSecrets:
+      - name: regcred
      
         
         ports:
