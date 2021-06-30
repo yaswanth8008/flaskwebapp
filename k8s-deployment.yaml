@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-flask-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: flask-app
@@ -15,7 +15,7 @@ spec:
       containers:
       - name: my-flask-app
         image: 80081837/mypythonflaskwebapp
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         
         ports:
         - containerPort: 5000
