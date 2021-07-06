@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-flask-app
-        image: 80081837/mypythonflaskwebapp
+        image: 80081837/mypythonflaskwebapp:latest
         imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred
